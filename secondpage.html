@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Page</title>
+  <style>
+    /* CSS for columns and alignment */
+    body {
+      background-image: url('background.jpeg');
+      background-size: cover;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+    
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 60px 20px;
+      text-align: center;
+      position: relative;
+    }
+    
+    h1 {
+      color: #fff;
+      font-size: 48px;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin-bottom: 60px;
+      position: relative;
+      z-index: 1;
+      text-shadow: 2px 2px rgba(0, 0, 0, 0.2);
+    }
+    
+    h1:before {
+      content: '';
+      display: block;
+      height: 100%;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.3);
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+    }
+    
+    .section {
+      padding: 20px;
+      text-align: center;
+      margin-bottom: 30px;
+      background-color: rgba(241, 234, 234, 0.8);
+      border-radius: 5px;
+      box-shadow: 0 5px 10px rgba(22, 21, 21, 0.2);
+    }
+    
+    .section h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+    
+    .section p {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+    
+    .fade-in {
+      opacity: 0;
+      animation: fadeInAnimation 1s ease-in forwards;
+    }
+
+    @keyframes fadeInAnimation {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+    
+    footer {
+      background-color: rgba(0, 0, 0, 0.8);
+      padding: 10px 20px;
+      color: #fff;
+      text-align: center;
+    }
+    
+    /* Additional styles for navigation */
+    nav {
+      background-color: rgba(0, 0, 0, 0.8);
+      padding: 10px 20px;
+      margin-bottom: 20px;
+    }
+    
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+    
+    nav ul li {
+      display: inline;
+    }
+    
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      margin-right: 10px;
+    }
+    
+    nav ul li a:hover {
+      color: #ffcc00;
+    }
+    
+    .footer-icons {
+      margin-top: 20px;
+    }
+    
+    .footer-icons a {
+      color: #fff;
+      margin: 0 10px;
+      text-decoration: none;
+      font-size: 24px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="column">
+      <img src="camera.jpg" alt="Camera">
+      <h1>Camera</h1>
+      <p>Explore the world through the lens of our high-quality cameras. Capture every moment with precision and clarity.</p>
+    </div>
+    <div class="column">
+      <img src="watch.jpg" alt="Watch">
+      <h1>Watch</h1>
+      <p>Stay stylish and punctual with our elegant and reliable watches. Timekeeping has never been this fashionable.</p>
+    </div>
+    <div class="column">
+      <img src="shoe.jpg" alt="Shoe">
+      <h1>Shoe</h1>
+      <p>Step into comfort and style with our premium shoes. Designed to make every stride a confident one.</p>
+    </div>
+  </div>
+  
+  <footer>
+    <p>&copy; 2023 Info aid Tech All rights reserved.</p>
+    <div class="footer-icons">
+      <a href="https://instagram.com" target="_blank"><img src="instagram.png" alt="Instagram"></a>
+      <a href="https://linkedin.com" target="_blank"><img src="linkedin.png" alt="LinkedIn"></a>
+      <a href="https://github.com" target="_blank"><img src="github.png" alt="GitHub"></a>
+    </div>
+  </footer>
+  
+  <script>
+    // JavaScript for animations (optional)
+    // You can use libraries like jQuery or CSS animations for more complex animations
+    // Here's a simple example using vanilla JavaScript
+    const columns = document.querySelectorAll('.column');
+    columns.forEach((column, index) => {
+      column.style.animationDelay = `${index * 0.2}s`;
+    });
+  </script>
+</body>
+</html>

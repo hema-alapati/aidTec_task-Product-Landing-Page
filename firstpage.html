@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Awesome Product Landing Page</title>
+  <style>
+    body {
+      background-image: url('background.jpeg');
+      background-size: cover;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
+    }
+
+    .heading-box {
+      background-color: rgba(255, 255, 255, 0.7);
+      padding: 20px;
+      border-radius: 4px;
+      margin-bottom: 40px;
+    }
+
+    h1 {
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 24px;
+      margin-bottom: 40px;
+    }
+
+    .icon {
+      font-size: 64px;
+      margin-bottom: 20px;
+      color: #ffc107;
+    }
+
+    .button {
+      padding: 10px 20px;
+      background-color: #ffc107;
+      color: #191970;
+      font-size: 20px;
+      text-decoration: none;
+      border-radius: 4px;
+    }
+
+    .button:hover {
+      background-color: #ffa000;
+    }
+
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    .animated {
+      animation: fadeIn 2s ease-in-out;
+    }
+  </style>
+  <script>
+    document.addEventListener("DOMContentLoaded", function(event) {
+      var title = document.getElementById("title");
+      title.classList.add("animated");
+    });
+  </script>
+</head>
+<body>
+  <div class="container">
+    <div class="heading-box">
+      <h1 id="title">Awesome Product</h1>
+    </div>
+    <p>An innovative solution that will revolutionize your life!</p>
+    <i class="icon fa fa-rocket"></i>
+    <a class="button" href="secondpage.html">Get Started</a>
+  </div>
+</body>
+</html>
